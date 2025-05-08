@@ -12,14 +12,15 @@ public class CannonController : MonoBehaviour
     public Transform firePoint;  // Position where the cannonball is spawned (usually the barrel tip)
     public float fireForce = 500f;  // The force with which the cannonball is fired
 
+    //private Vector3 initialRotation;
     private Quaternion initialRotation;
     private Vector3 initialPosition;
 
     void Awake()
     {
-        // Record the initial transform to maintain placement
-        initialPosition = transform.position;
-        initialRotation = transform.rotation;
+        //// Record the initial transform to maintain placement
+        //initialPosition = transform.position;
+        //initialRotation = transform.rotation;
     }
 
     void Start()
@@ -46,7 +47,7 @@ public class CannonController : MonoBehaviour
         // Fire the cannonball when Space is pressed
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            FireCannonball();
+           // FireCannonball();
         }
     }
 
